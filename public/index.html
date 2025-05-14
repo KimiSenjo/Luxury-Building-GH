@@ -1,12 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Luxury Building Ghana</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Building Ghana</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Welcome to Luxury Building Ghana</h1>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>LUXURY BUILDING GHANA</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="buy.html">Buy a Home</a></li>
+                    <li><a href="build.html">Build a Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="cta-button">
+                <a href="#" class="btn" id="open-inquiry">Inquire Now</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="slider">
+            <div class="slide">
+                <img src="images/banner-bg.jpg" alt="Luxury Home Ghana">
+                <div class="slide-content">
+                    <h2>Find Your Dream Luxury Home in Ghana</h2>
+                    <p>Premium real estate for local and diaspora buyers</p>
+                    <a href="buy.html" class="btn">Browse Properties</a>
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div>
+                    <h3>Luxury Building Ghana</h3>
+                    <p>We connect discerning buyers with the finest homes in Ghana. Whether you want to buy or build, our team delivers exceptional service and quality.</p>
+                    <a href="build.html" class="btn-secondary">Learn More</a>
+                </div>
+                <div>
+                    <img src="images/about-image.jpg" alt="About Luxury Building Ghana">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Buy a Home</h3>
+                    <p>Browse our curated selection of luxury properties in Ghana's most desirable locations.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-drafting-compass"></i>
+                    <h3>Build a Home</h3>
+                    <p>Work with our architects and builders to create your custom dream home.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Consultation</h3>
+                    <p>Get expert advice on property investment, design, and the buying process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties Section -->
+    <section class="featured-properties">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Properties</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="property-grid">
+                <div class="property-card">
+                    <img src="images/property-1.jpg" alt="Property 1">
+                    <h3>Modern 3 Bedroom Home</h3>
+                    <p>East Legon, Accra</p>
+                    <span class="property-price">$140,000</span>
+                </div>
+                <div class="property-card">
+                    <img src="images/property-2.jpg" alt="Property 2">
+                    <h3>Luxury 4 Bedroom Mansion</h3>
+                    <p>Cantonments, Accra</p>
+                    <span class="property-price">$350,000</span>
+                </div>
+                <div class="property-card">
+                    <img src="images/property-3.jpg" alt="Property 3">
+                    <h3>Premium Estate Home</h3>
+                    <p>Trasacco Valley, Accra</p>
+                    <span class="property-price">$950,000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"Luxury Building Ghana made buying a home easy and stress-free. Highly recommended!"</p>
+                    <h4>Michael Asante</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Their team helped us build our dream home with professionalism and care."</p>
+                    <h4>Sarah Mensah</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Excellent service and beautiful properties. Thank you!"</p>
+                    <h4>David Adjei</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Form Modal -->
+    <div class="modal" id="inquiry-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Inquire About Our Properties</h2>
+            <form id="inquiry-form">
+                <div class="form-group">
+                    <label for="inq-name">Full Name</label>
+                    <input type="text" id="inq-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="inq-email">Email Address</label>
+                    <input type="email" id="inq-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="inq-phone">Phone Number</label>
+                    <input type="tel" id="inq-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="inq-interest">Area of Interest</label>
+                    <select id="inq-interest" name="interest" required>
+                        <option value="">Select an option</option>
+                        <option value="East Legon">East Legon</option>
+                        <option value="Cantonments">Cantonments</option>
+                        <option value="Airport Residential">Airport Residential</option>
+                        <option value="Trasacco Valley">Trasacco Valley</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inq-property-type">Property Type</label>
+                    <select id="inq-property-type" name="property-type" required>
+                        <option value="">Select an option</option>
+                        <option value="3-bedroom">3 Bedroom</option>
+                        <option value="4-bedroom">4 Bedroom</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inq-message">Additional Information</label>
+                    <textarea id="inq-message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Luxury Building Assistant</h3>
+            <button id="close-chatbot"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot">
+                Welcome to Luxury Building Ghana! How can I assist you today?
+            </div>
+            <div class="message bot">
+                Are you looking to buy or build a home?
+                <div class="chatbot-options">
+                    <button class="chatbot-option" data-option="buy">Buy a Home</button>
+                    <button class="chatbot-option" data-option="build">Build a Home</button>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <div class="chatbot-toggle" id="chatbot-toggle">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>LUXURY BUILDING GHANA</h2>
+                    <p>Your Dream Luxury Home Awaits in Ghana</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="buy.html">Buy a Home</a></li>
+                        <li><a href="build.html">Build a Home</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Independence Avenue, Accra, Ghana</p>
+                    <p><i class="fas fa-phone"></i> +233 20 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@luxurybuildingghana.com</p>
+                    <div class="business-hours">
+                        <p><strong>Business Hours:</strong></p>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Luxury Building Ghana. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
