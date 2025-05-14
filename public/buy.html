@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy a Home - Luxury Building Ghana</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Add Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>LUXURY BUILDING GHANA</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="buy.html" class="active">Buy a Home</a></li>
+                    <li><a href="build.html">Build a Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="cta-button">
+                <a href="#" class="btn" id="open-inquiry">Inquire Now</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Buy Your Dream Home</h1>
+            <p>Explore our collection of luxury properties available in Ghana</p>
+        </div>
+    </section>
+
+    <!-- Property Filters -->
+    <section class="property-filters">
+        <div class="container">
+            <form id="property-filter-form">
+                <div class="filter-group">
+                    <label for="location">Location</label>
+                    <select id="location" name="location">
+                        <option value="all">All Locations</option>
+                        <option value="East Legon">East Legon</option>
+                        <option value="Cantonments">Cantonments</option>
+                        <option value="Airport Residential">Airport Residential</option>
+                        <option value="Trasacco Valley">Trasacco Valley</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="property-type">Property Type</label>
+                    <select id="property-type" name="property-type">
+                        <option value="all">All Types</option>
+                        <option value="3-bedroom">3 Bedroom</option>
+                        <option value="4-bedroom">4 Bedroom</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-range">Price Range</label>
+                    <select id="price-range" name="price-range">
+                        <option value="all">All Prices</option>
+                        <option value="140000-180000">$140,000 - $180,000</option>
+                        <option value="180000-250000">$180,000 - $250,000</option>
+                        <option value="250000-500000">$250,000 - $500,000</option>
+                        <option value="500000-1200000">$500,000 - $1,200,000</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Filter Properties</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section class="properties">
+        <div class="container">
+            <div class="property-grid">
+                <!-- 3 Bedroom Properties -->
+                <div class="property-card" data-type="3-bedroom" data-location="East Legon" data-price="140000">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="3 Bedroom Luxury Home">
+                        <div class="property-price">$140,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Modern 3 Bedroom Home</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> East Legon, Accra</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2,200 sqft</span>
+                        </div>
+                        <p class="property-description">
+                            This beautiful 3-bedroom home features modern architecture, spacious living areas, and a private garden. Perfect for families looking for comfort and style.
+                        </p>
+                        <div class="property-buttons">
+                            <a href="#" class="btn-secondary view-property" data-id="prop1">View Details</a>
+                            <a href="#" class="btn request-viewing" data-id="prop1">Request Viewing</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card" data-type="3-bedroom" data-location="Cantonments" data-price="160000">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1453&q=80" alt="3 Bedroom Luxury Home">
+                        <div class="property-price">$160,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Elegant 3 Bedroom Townhouse</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Cantonments, Accra</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3.5 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2,400 sqft</span>
+                        </div>
+                        <p class="property-description">
+                            This elegant townhouse offers luxury living with high-end finishes, a modern kitchen, and a rooftop terrace with stunning city views.
+                        </p>
+                        <div class="property-buttons">
+                            <a href="#" class="btn-secondary view-property" data-id="prop2">View Details</a>
+                            <a href="#" class="btn request-viewing" data-id="prop2">Request Viewing</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card" data-type="3-bedroom" data-location="Airport Residential" data-price="175000">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="3 Bedroom Luxury Home">
+                        <div class="property-price">$175,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Contemporary 3 Bedroom Villa</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Airport Residential, Accra</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2,300 sqft</span>
+                        </div>
+                        <p class="property-description">
+                            A contemporary villa with open floor plan, floor-to-ceiling windows, and a beautiful landscaped garden. Located in the prestigious Airport Residential area.
+                        </p>
+                        <div class="property-buttons">
+                            <a href="#" class="btn-secondary view-property" data-id="prop3">View Details</a>
+                            <a href="#" class="btn request-viewing" data-id="prop3">Request Viewing</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 Bedroom Properties -->
+                <div class="property-card" data-type="4-bedroom" data-location="East Legon" data-price="220000">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600047509807-f8261a3f7980?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="4 Bedroom Luxury Home">
+                        <div class="property-price">$220,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Spacious 4 Bedroom Family Home</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> East Legon, Accra</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 3,000 sqft</span>
+                        </div>
+                        <p class="property-description">
+                            This spacious family home offers generous living spaces, a modern kitchen, private study, and a large garden with a swimming pool.
+                        </p>
+                        <div class="property-buttons">
+                            <a href="#" class="btn-secondary view-property" data-id="prop4">View Details</a>
+                            <a href="#" class="btn request-viewing" data-id="prop4">Request Viewing</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card" data-type="4-bedroom" data-location="Cantonments" data-price="350000">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="4 Bedroom Luxury Home">
+                        <div class="property-price">$350,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Luxury 4 Bedroom Mansion</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Cantonments, Accra</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4.5 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 3,500 sqft</span>
+                        </div>
+                        <p class="property-description">
+                            An exquisite mansion featuring premium finishes, a gourmet kitchen, home theater, and a stunning outdoor entertainment area with pool.
+                        </p>
+                        <div class="property-buttons">
+                            <a href="#" class="btn-secondary view-property" data-id="prop5">View Details</a>
+                            <a href="#" class="btn request-viewing" data-id="prop5">Request Viewing</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card" data-type="4-bedroom" data-location="Trasacco Valley" data-price="950000">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="4 Bedroom Luxury Home">
+                        <div class="property-price">$950,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Premium 4 Bedroom Estate Home</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Trasacco Valley, Accra</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 5 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 4,200 sqft</span>
+                        </div>
+                        <p class="property-description">
+                            This premium estate home offers the ultimate in luxury living with smart home features, infinity pool, private gym, and breathtaking views.
+                        </p>
+                        <div class="property-buttons">
+                            <a href="#" class="btn-secondary view-property" data-id="prop6">View Details</a>
+                            <a href="#" class="btn request-viewing" data-id="prop6">Request Viewing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Viewing Request Modal -->
+    <div class="modal" id="viewing-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Request a Viewing</h2>
+            <form id="viewing-form">
+                <input type="hidden" id="property-id" name="property-id">
+                <div class="form-group">
+                    <label for="viewing-name">Full Name</label>
+                    <input type="text" id="viewing-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="viewing-email">Email Address</label>
+                    <input type="email" id="viewing-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="viewing-phone">Phone Number</label>
+                    <input type="tel" id="viewing-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="viewing-date">Preferred Viewing Date</label>
+                    <input type="date" id="viewing-date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="viewing-time">Preferred Time</label>
+                    <select id="viewing-time" name="time" required>
+                        <option value="">Select a time</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="1:00 PM">1:00 PM</option>
+                        <option value="2:00 PM">2:00 PM</option>
+                        <option value="3:00 PM">3:00 PM</option>
+                        <option value="4:00 PM">4:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="viewing-message">Additional Information</label>
+                    <textarea id="viewing-message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Inquiry Form Modal -->
+    <div class="modal" id="inquiry-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Inquire About Our Properties</h2>
+            <form id="inquiry-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest">Area of Interest</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Select an option</option>
+                        <option value="East Legon">East Legon</option>
+                        <option value="Cantonments">Cantonments</option>
+                        <option value="Airport Residential">Airport Residential</option>
+                        <option value="Trasacco Valley">Trasacco Valley</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="property-type">Property Type</label>
+                    <select id="property-type" name="property-type" required>
+                        <option value="">Select an option</option>
+                        <option value="3-bedroom">3 Bedroom</option>
+                        <option value="4-bedroom">4 Bedroom</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Information</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Luxury Building Assistant</h3>
+            <button id="close-chatbot"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot">
+                Welcome to Luxury Building Ghana! How can I assist you today?
+            </div>
+            <div class="message bot">
+                Are you looking to buy or build a home?
+                <div class="chatbot-options">
+                    <button class="chatbot-option" data-option="buy">Buy a Home</button>
+                    <button class="chatbot-option" data-option="build">Build a Home</button>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <div class="chatbot-toggle" id="chatbot-toggle">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>LUXURY BUILDING GHANA</h2>
+                    <p>Your Dream Luxury Home Awaits in Ghana</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="buy.html">Buy a Home</a></li>
+                        <li><a href="build.html">Build a Home</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Independence Avenue, Accra, Ghana</p>
+                    <p><i class="fas fa-phone"></i> +233 20 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@luxurybuildingghana.com</p>
+                    <div class="business-hours">
+                        <p><strong>Business Hours:</strong></p>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Luxury Building Ghana. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "luxury-building-ghana",
+  "version": "1.0.0",
+  "description": "Premium real estate website for Luxury Building Ghana",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve",
+    "build": "echo \"No build step required\""
+  },
+  "keywords": [
+    "real-estate",
+    "luxury",
+    "ghana",
+    "property"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.0.0"
+  }
+}
